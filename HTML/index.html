@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../CSS/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- MENUENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Rodri</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <div id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-banner">
+          <div class="contenedor-img">
+            <img src="../IMG/YO.jpg" alt="RodriPic" />
+          </div>
+          <h1>RODRIGO COZZO</h1>
+          <h2>Salesforce Developer</h2>
+          <h2>Full Stack Developer</h2>
+          <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre mí</h2>
+        <p>
+          <span>Hola, soy Rodrigo Cozzo.</span> Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Repellat earum saepe sapiente reiciendis
+          blanditiis reprehenderit illum quo et. Vel aspernatur accusantium
+          laudantium nisi suscipit! Totam officia beatae exercitationem
+          laudantium voluptas.
+        </p>
+
+        <div class="fila">
+          <!-- Datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                11-07-1992
+              </li>
+              <li>
+                <strong>Celular</strong>
+                (+54) 2612-516138
+              </li>
+              <li>
+                <strong>Email</strong>
+                rodrigocozzo02@gmail.com
+              </li>
+              <li>
+                <strong>GitHub</strong>
+                https://github.com/RodriCozzo/
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Benavente 5893 - Mendoza, Argentina
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Mercados Financieros</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-bitcoin"></i>
+                <span>Criptomonedas</span>
+              </div>
+              <div class="interes">
+                <i class="fa-regular fa-futbol"></i>
+                <span>Deportes</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>Libros</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Nuevas Tecnologías</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>Vehículo Favorito</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <strong>Descargar CV </strong> <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skills -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso javascript">
+                  <span><strong>75%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso htmlcss">
+                  <span><strong>88%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Apex</span>
+              <div class="barra-skill">
+                <div class="progreso apex">
+                  <span><strong>70%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>LWC</span>
+              <div class="barra-skill">
+                <div class="progreso lwc">
+                  <span><strong>74%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Omnistudio</span>
+              <div class="barra-skill">
+                <div class="progreso omni">
+                  <span><strong>60%</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso comunicacion">
+                  <span><strong>85%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso trabajo">
+                  <span><strong>89%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso creativ">
+                  <span><strong>86%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso dedicacion">
+                  <span><strong>90%</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Autotidacta</span>
+              <div class="barra-skill">
+                <div class="progreso autotidacta">
+                  <span><strong>92%</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Currículum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Tecnicatura en Higiene y Seguridad</h4>
+              <span class="casa">UNC</span>
+              <span class="fecha">2013-2016</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                enim commodi sint! Expedita recusandae minima fuga nisi iure
+                nobis assumenda esse id incidunt provident, et aspernatur
+                eligendi rerum nemo saepe.
+              </p>
+              <div class="conectorizq">
+                <div class="circuloizq"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Licenciatura en Higiene y Seguridad</h4>
+              <span class="casa">UNC</span>
+              <span class="fecha">2016-2019</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                enim commodi sint! Expedita recusandae minima fuga nisi iure
+                nobis assumenda esse id incidunt provident, et aspernatur
+                eligendi rerum nemo saepe.
+              </p>
+              <div class="conectorizq">
+                <div class="circuloizq"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">LabsXD</span>
+              <span class="fecha">2021-2022</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                enim commodi sint! Expedita recusandae minima fuga nisi iure
+                nobis assumenda esse id incidunt provident, et aspernatur
+                eligendi rerum nemo saepe.
+              </p>
+              <div class="conectorder">
+                <div class="circuloder"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Front Developer</h4>
+              <span class="casa">LabsXD</span>
+              <span class="fecha">2022-2023</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
+                enim commodi sint! Expedita recusandae minima fuga nisi iure
+                nobis assumenda esse id incidunt provident, et aspernatur
+                eligendi rerum nemo saepe.
+              </p>
+              <div class="conectorder">
+                <div class="circuloder"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="../IMG/capacitacion.png" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 1</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="../IMG/trad.png" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 2</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 3</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 4</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 5</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía 6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <seccion id="contacto" class="contacto">
+      <video autoplay muted loop id="myVideo">
+        <source src="../VIDEO/Video Background.mp4" type="video/mp4" />
+      </video>
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tu nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="../IMG/ubi.png" alt="ubicacion" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Mi Dirección: Benavente 5893, Guaymallén - Mendoza
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  Número de contacto: 2612-516138
+                </li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  Email: rodrigocozzo02@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </seccion>
+    <!-- FOOTER -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
